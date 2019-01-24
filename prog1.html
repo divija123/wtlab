@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <script>
+        var arr=[2,2,4,1];
+        var i;
+        var j;
+        var prod=1;
+        var b=new Array();
+        function fname(arr)
+        {
+            for(i=0;i<arr.length;i++)
+            {
+                for(j=0;j<arr.length;j++)
+                    {
+                        if(i!=j)
+                         {
+                            prod=prod*arr[j];          
+                         }
+                                        
+                    }
+                b[i]=prod;
+                prod=1;
+            }
+            return b;
+            
+        }
+    </script>
+</head>
+        <body>
+            <script>
+             console.log(fname(arr));
+        
+           
+            
+    </script>
+</body>
+</html>
